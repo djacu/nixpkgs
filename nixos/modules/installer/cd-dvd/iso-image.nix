@@ -454,6 +454,7 @@ in
 
     isoImage.isoName = mkOption {
       default = "${config.isoImage.isoBaseName}.iso";
+      type = types.str;
       description = lib.mdDoc ''
         Name of the generated ISO image file.
       '';
@@ -461,6 +462,7 @@ in
 
     isoImage.isoBaseName = mkOption {
       default = "nixos";
+      type = types.str;
       description = lib.mdDoc ''
         Prefix of the name of the generated ISO image file.
       '';
