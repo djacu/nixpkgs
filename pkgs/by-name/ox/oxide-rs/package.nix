@@ -18,14 +18,15 @@ rustPlatform.buildRustPackage {
   src = fetchFromGitHub {
     owner = "djacu";
     repo = "oxide.rs";
-    rev = "8d608eecf92d23704ceca6cac2b8be78a56d9e20";
-    hash = "sha256-7fba9QY9GeGKob8oU58tTRa3w1yoY1cPADKKF5ROt6k=";
+    rev = "a4b9305178d5f871ed4061a349b83d1e87f5e5bf";
+    hash = "sha256-npQnHsbP7s7CAz5GOXwvlwbgFDVHAATByrj6SRL4PB8=";
     leaveDotGit = true;
   };
 
   cargoLock = {
     lockFile = ./Cargo.lock;
     outputHashes = {
+      "dropshot-0.11.1-dev" = "sha256-Im6+TUVe1jG0UM86K5VLLiThdyOWBMORniNyWdO2iS4=";
       "oxnet-0.1.0" = "sha256-RFTNKLR4JrNs09De8K+M35RDk/7Nojyl0B9d14O9tfM=";
       "thouart-0.1.0" = "sha256-GqSHyhDCqQCC8dCvXzsn2WMcNKJxJWXrTcR38Wr3T1s=";
     };
